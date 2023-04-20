@@ -1,0 +1,5 @@
+"0","    report <- obistools::report(trawl_fish)
+"
+"2","Error in which(as.vector(shoredistances) < (-1 * buffer)) : 
+  'list' object cannot be coerced to type 'double'
+"

@@ -1,0 +1,179 @@
+---
+title: "OBIS_QAQC"
+format: html
+editor: visual
+---
+
+## Intro
+
+OBIS performs [quality checks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4309024/pdf/bau125.pdf) on all of the data it receives. The following QAQC will ensure your data is prepared and has met the minimum requirements, to limit publishing errors and identify outliers or "faulty" data. Most of the following steps can be completed using [OBIStools functions](https://github.com/iobis/obistools). Data quality checks need to be completed for each table (event, occurrence, and eMoF), however there may be different steps for each table.
+
+## Install and load packages
+
+```{r, eval=FALSE}
+#devtools::install_github("iobis/obistools")
+#install.packages('Hmisc')
+library(devtools)
+library(readxl)
+library(obistools)
+library(Hmisc)
+```
+
+## Recommended QAQC Steps to Consider
+
+1.  Check that all the [required Darwin Core terms](https://ioos.github.io/bio_mobilization_workshop/01-introduction/index.html#what-are-the-required-darwin-core-terms-for-publishing-to-obis) and OBIS fields are present and contain the correct information
+
+    1.  `check_fields()`
+
+    2.  [Additional Darwin Core Terms](https://dwc.tdwg.org/terms/)
+
+2.  Make a map from your data to ensure the coordinates are valid and within your expected range
+
+    1.  completed in [`report()` OBIS function](https://github.com/iobis/obistools#data-quality-report)
+
+    2.  You can also use [`plot_map()` or `plot_map_leaflet()`](https://github.com/iobis/obistools#plot-points-on-a-map) for occurrence records
+
+3.  Run basic statistics on each column of numeric data (min, max, mean, std. dev., etc.) to identify potential issues
+
+    1.  Some summary statistics can be found using [`report()` OBIS function](https://github.com/iobis/obistools#data-quality-report)
+
+    2.  You can also use the Hmisc package with the [`describe()` function](https://rdrr.io/cran/Hmisc/man/describe.html)
+
+    3.  If we have a lot of quantitative data, we can use other summary statistic functions to quality check those
+
+4.  Look at unique values of columns containing string entries to identify potential issues (eg. spelling)
+
+5.  Check for uniqueness of occurrenceID field
+
+6.  Check for uniqueness of eventID for each event, if applicable
+
+    1.  [`eventid <- obistools::check_eventids()`](https://github.com/iobis/obistools#check-eventid-and-parenteventid)
+
+7.  Check that dates are following [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601)
+
+8.  Check that the scientificNameID is/are valid
+
+    1.  OBIS uses the [World Register of Marine Species (WoRMS)](https://www.marinespecies.org/) as the taxonomic backbone. We need to match our species abbreviations to WoRMS naming
+
+    2.  [`obistools::match_taxa()`](https://github.com/iobis/obistools#taxon-matching) performs interactive taxon matching with WoRMS
+
+## Event Table QAQC Steps
+
+### Step 1: Run a diagnostics/summary report for the data quality
+
+```{r, eval=FALSE}
+#This will return a diagonistic report including a map of the events and general errors & warnings 
+EventReport <- report(eventTable) 
+EventReport
+
+#You can also run the Hmisc describe() function for a summary of the data
+describe(eventTable)
+```
+
+### Step 2: Check to make sure eventID are unique
+
+```{r, eval=FALSE}
+eventid <- check_eventids(eventTable)
+head(eventid)
+```
+
+### Step 3: Check for proper eventDate to ensure they follow ISO 8601 standards
+
+```{r, eval=FALSE}
+check_eventdate(eventTable)
+```
+
+## Occurrence Table QAQC Steps
+
+### Step 1: Run a diagnostics/summary report for the data quality
+
+```{r, eval=FALSE}
+#This will check if all OBIS required fields are present in the occurence table
+check_fields(occurrenceTable)
+
+#This will return a diagonistic report including a map of the occurrences and general errors & warnings
+OccurReport <- report(occurrenceTable) 
+OccurReport
+
+#You can also run the Hmisc describe() function for a summary of the data
+describe(occurrenceTable)
+```
+
+### Step 2: Check to make sure occurrenceID are unique
+
+```{r, eval=FALSE}
+#I think this can be completed using describe() function as well. It returns n, missing, and distinct for each column but I imagine we can select one column using $
+describe(occurrenceTable$occurrenceID)
+
+```
+
+### Step 3: Check for proper eventDate to ensure they follow ISO 8601 standards
+
+```{r, eval=FALSE}
+check_eventdate(occurrenceTable)
+```
+
+### Step 4: Check that the scientificNameID are valid
+
+```{r, eval=FALSE}
+#OBIS uses 
+#Not 100% sure on the best way to do this but heres my idea
+#names <- some function to pull out all of the scientificNameID from our occurrence table
+match_taxa(names)
+
+#this should return n names, n without matches, n with multiple matches
+```
+
+## eMof Table QAQC Steps
+
+fill in steps here if we move forward with creating eMoF table (extended measurement or fact extension table)
+
+## OBIS Workshop Example Code
+
+### `Hmisc::describe()` Function
+
+```{r}
+# pull in the occurrence file from https://www.sciencebase.gov/catalog/item/53a887f4e4b075096c60cfdd
+#url not working
+#url <- "https://www.sciencebase.gov/catalog/file/get/53a887f4e4b075096c60cfdd?f=__disk__32%2F24%2F80%2F322480c9bcbad19030e29c9ec5e2caeb54cb4a08&allowOpen=true"
+
+occurrence <- read.csv('53a887f4e4b075096c60cfdd.csv')
+
+head(occurrence,n=1)
+
+Hmisc::describe(occurrence)
+```
+
+### Workshop Exercise
+
+Code not working, [link to workshop example](https://ioos.github.io/bio_mobilization_workshop/06-qa-qc/index.html)
+
+1.  Run a diagnostics report for the data quality
+
+    ```{r, eval=FALSE}
+    trawl_fish <- readxl::read_excel('trawl_fish.xlsx')
+    report <- obistools::report(trawl_fish)
+    report
+    ```
+
+2.  Check to make sure `eventID` are unique
+
+    ```{r, eval=FALSE}
+    eventid <- obistools::check_eventids(trawl_fish)
+    head(eventid)
+    ```
+
+3.  Check for proper `eventDate` to ensure they follow ISO 8601 standards
+
+    ```{r, eval=FALSE}
+    eventDate <- obistools::check_eventdate(trawl_fish)
+    print(eventDate)
+    ```
+
+4.  From the report generated under exercise 1, you can already see that there\'s measurements made on land. This information can also be gathered by plotting the map separately or using the `check_onland()` or `check_depth()` functions in the [obistools](https://iobis.github.io/obistools/) package.
+
+    ```{r, eval=FALSE}
+    depth <- obistools::check_depth(trawl_fish)
+    onland <- obistools::check_onland(trawl_fish) # Gives the same output.           
+    print(depth) 
+    ```

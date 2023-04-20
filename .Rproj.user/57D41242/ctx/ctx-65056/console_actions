@@ -1,0 +1,18 @@
+{
+    "type": [
+        2,
+        2,
+        3,
+        0,
+        1,
+        2
+    ],
+    "data": [
+        "\nR version 4.2.2 (2022-10-31 ucrt) -- \"Innocent and Trusting\"\nCopyright (C) 2022 The R Foundation for Statistical Computing\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n",
+        "[Workspace loaded from ~/OBIS Workshop/.RData]\r\n\r\n",
+        "Registered S3 method overwritten by 'hoardr':\n  method           from\n  print.cache_info httr\n",
+        "> ",
+        "install.packages('devtools')",
+        "Error in install.packages : Updating loaded packages\n\nRestarting R session...\n\n"
+    ]
+}

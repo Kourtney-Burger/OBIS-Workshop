@@ -1,0 +1,250 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="https://ipt.env.duke.edu/resource?id=zd_2190/v1.0" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>https://ipt.env.duke.edu/resource?r=zd_2190</alternateIdentifier>
+  <title xml:lang="eng">Minke whale localized acoustic detections off Kauai</title>
+      <creator>
+    <individualName>
+        <givenName>Regina</givenName>
+      <surName>Guazzo</surName>
+    </individualName>
+    <organizationName>Naval Information Warfare Center Pacific</organizationName>
+    <positionName>Primary contact</positionName>
+    <electronicMailAddress>rguazzo@ucsd.edu</electronicMailAddress>
+      </creator>
+      <metadataProvider>
+    <individualName>
+      <surName>OBIS-SEAMAP</surName>
+    </individualName>
+    <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+    <address>
+        <deliveryPoint>A328 LSRC building</deliveryPoint>
+        <city>Durham</city>
+        <administrativeArea>NC</administrativeArea>
+        <postalCode>27708</postalCode>
+        <country>US</country>
+    </address>
+    <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+    <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+      </metadataProvider>
+      <associatedParty>
+    <individualName>
+      <surName>OBIS-SEAMAP</surName>
+    </individualName>
+    <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+    <address>
+        <deliveryPoint>A328 LSRC building</deliveryPoint>
+        <city>Durham</city>
+        <administrativeArea>NC</administrativeArea>
+        <postalCode>27708</postalCode>
+        <country>US</country>
+    </address>
+    <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+    <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+    <role>distributor</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Regina</givenName>
+      <surName>Guazzo</surName>
+    </individualName>
+    <organizationName>Naval Information Warfare Center Pacific</organizationName>
+    <positionName>Primary contact</positionName>
+    <electronicMailAddress>rguazzo@ucsd.edu</electronicMailAddress>
+    <role>owner</role>
+      </associatedParty>
+  <pubDate>
+      2022-06-30
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>Original provider:
+Regina A. Guazzo, Naval Information Warfare Center Pacific
+
+Dataset credits:
+Naval Information Warfare Center Pacific
+
+Abstract:
+Minke whale boing calls are commonly detected in Hawaiian waters.  When 
+vocalizing, minke whales seem to be in one of two calling behavioral states.  
+Most often minke whales produce boings with inter-call intervals of several 
+minutes, but sometimes minke whales call rapidly with inter-call intervals 
+of less than a minute.  Since minke whales are difficult to detect visually, 
+cue rate based density estimation using passive acoustic monitoring 
+has been proposed.  However, the variables that influence cue rate or 
+calling rate are poorly understood in most whales including minke whales.  
+We collected passive acoustic recordings from 47 bottom-mounted 
+hydrophones at the Pacific Missile Range Facility’s instrumented range off 
+the coast of Kauaʻi, Hawaiʻi to test the hypothesis that minke whales call 
+more rapidly when closer in proximity to other calling conspecifics.  A total 
+of 599 days of data were recorded between August 2012 and July 2017 and 
+were automatically post-processed to detect, classify, and localize calls.  
+Localized calls were automatically tracked and manually validated, 
+resulting in 509 individual tracks composed of 36,033 calls within a 16x39 
+km study area.  Tracked minke whales exhibited a strong bimodal call rate 
+with means of one call every 6.85 min (SD = 2.54 min) and 0.63 min (SD = 
+0.36 min).  We ran hidden Markov models to quantify the relationship 
+between call rate and the distance to the nearest calling conspecific.  
+Overall, the probability of the higher call rate occurring increased as the 
+distance to the nearest conspecific decreased, and the probability of the 
+lower call rate occurring increased as the distance to the nearest 
+conspecific increased.  We also examined individual track data and found 
+that minke whales may also exhibit other responses (i.e. increased speed, 
+changes in heading, and cessation of calling) when calling conspecifics are 
+nearby.  These findings provide new information about minke whale calling 
+behavior on what are likely their breeding grounds.
+
+Supplemental information:
+The monitoring effort of each of the hydrophones in the array is the same and 
+the hydrophone locations are rounded and approximate.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Occurrence,Marine Animal Survey,Marine Biology,Marine mammals,Acoustic precense/absence,Ocean-based Platforms</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Observation</keyword>
+        <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Occurrence</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+      </keywordSet>
+  <additionalInfo>
+    <para>marine, harvested by iOBIS</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">https://seamap.env.duke.edu/dataset/2190</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Pacific,Hawaii,Kauai</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-160.28</westBoundingCoordinate>
+          <eastBoundingCoordinate>-159.586</eastBoundingCoordinate>
+          <northBoundingCoordinate>23.018</northBoundingCoordinate>
+          <southBoundingCoordinate>22.009</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <temporalCoverage>
+              <rangeOfDates>
+                  <beginDate>
+                    <calendarDate>2012-11-27</calendarDate>
+                  </beginDate>
+                <endDate>
+                  <calendarDate>2017-05-10</calendarDate>
+                </endDate>
+              </rangeOfDates>
+          </temporalCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>Scientific names are based on the Integrated Taxonomic Information System (ITIS).</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>species</taxonRankName>
+                <taxonRankValue>Balaenoptera acutorostrata</taxonRankValue>
+                  <commonName>Common Minke Whale</commonName>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+  <purpose>
+    <para>Not available</para>
+  </purpose>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Regina</givenName>
+      <surName>Guazzo</surName>
+    </individualName>
+    <organizationName>Naval Information Warfare Center Pacific</organizationName>
+    <positionName>Primary contact</positionName>
+    <electronicMailAddress>rguazzo@ucsd.edu</electronicMailAddress>
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para>NA</para>
+          </description>
+        </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>NA</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>NA</para>
+        </samplingDescription>
+      </sampling>
+  </methods>
+  <project >
+    <title>Minke whale localized acoustic detections off Kauai</title>
+      <personnel>
+        <individualName>
+            <givenName>Regina</givenName>
+          <surName>Guazzo</surName>
+        </individualName>
+        <role>owner</role>
+      </personnel>
+      <funding>
+        <para>NA</para>
+      </funding>
+  </project>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2014-06-17T04:31:03.049-04:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <citation>Martin, C. R., Guazzo, R. A., Helble, T. A., Alongi, G. C., Durbach, I. N., Martin, S. W., Matsuyama, B. M., &amp; Henderson, E. E. 2022. Minke whales call rapidly when calling conspecifics are nearby. Frontiers in Marine Science.</citation>
+            <physical>
+              <objectName>OBIS-SEAMAP Dataset Page</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>Interactive map</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://seamap.env.duke.edu/dataset/2190</url>
+                </online>
+              </distribution>
+            </physical>
+            <physical>
+              <objectName>FGDC Metadata</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>XML</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://seamap.env.duke.edu/dataset/2190/xml</url>
+                </online>
+              </distribution>
+            </physical>
+              <collection>
+                  <parentCollectionIdentifier>OBIS-SEAMAP</parentCollectionIdentifier>
+                  <collectionIdentifier>zd_2190</collectionIdentifier>
+                <collectionName>zd_2190</collectionName>
+              </collection>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

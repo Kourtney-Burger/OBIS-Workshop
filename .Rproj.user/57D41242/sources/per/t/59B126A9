@@ -1,0 +1,32 @@
+{
+    "id": "59B126A9",
+    "path": "~/OBIS Workshop/OBIS_QAQC.qmd",
+    "project_path": "OBIS_QAQC.qmd",
+    "type": "quarto_markdown",
+    "hash": "609317016",
+    "contents": "",
+    "dirty": false,
+    "created": 1681930175211.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "146,0",
+        "scrollLine": "18",
+        "docOutlineVisible": "0",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "0:2992.727294921875"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1681944659,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1681944659348,
+    "read_only": false,
+    "read_only_alternatives": []
+}

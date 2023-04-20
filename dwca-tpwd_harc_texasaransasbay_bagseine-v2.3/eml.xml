@@ -1,0 +1,121 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="2473e9c3-624f-4cd6-bfc6-b476913790b5/v2.3" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>2473e9c3-624f-4cd6-bfc6-b476913790b5</alternateIdentifier>
+  <alternateIdentifier>https://www1.usgs.gov/obis-usa/ipt/resource?r=tpwd_harc_texasaransasbay_bagseine</alternateIdentifier>
+  <title xml:lang="eng">TPWD HARC Texas Coastal Fisheries Aransas Bay Bag Seine</title>
+      <creator>
+    <individualName>
+        <givenName>Lisa</givenName>
+      <surName>Gonzalez</surName>
+    </individualName>
+    <organizationName>Houston Advanced Research Center</organizationName>
+    <positionName>Vice President and Chief Operating Officer</positionName>
+    <electronicMailAddress>lgonzalez@harcresearch.org</electronicMailAddress>
+      </creator>
+      <metadataProvider>
+    <individualName>
+        <givenName>Abigail</givenName>
+      <surName>Benson</surName>
+    </individualName>
+    <organizationName>U.S. Geological Survey</organizationName>
+    <positionName>Biologist</positionName>
+    <electronicMailAddress>albenson@usgs.gov</electronicMailAddress>
+      </metadataProvider>
+      <associatedParty>
+    <individualName>
+        <givenName>Abigail</givenName>
+      <surName>Benson</surName>
+    </individualName>
+    <organizationName>U.S. Geological Survey</organizationName>
+    <positionName>Biologist</positionName>
+    <electronicMailAddress>albenson@usgs.gov</electronicMailAddress>
+    <role>user</role>
+      </associatedParty>
+  <pubDate>
+      2021-11-14
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>The Texas Parks and Wildlife Department (TPWD) utilizes several sampling gears for fisheries-independent monitoring of finfish and shellfish communities. They include bag seines, trawls, gill nets and oyster dredges. TPWD uses multiple gears in a random sampling protocol, and they identify (to the lowest taxonomic unit possible) and count everything that they collect. This dataset contains bag seine data collected for the Aransas bay system in Texas from 1977 to 2008. Collected data also included spatial and temporal information describing the sample location and time, collection gear information, hydrological data (e.g. dissolved oxygen, water temperature, and salinity), weather conditions, species caught, and number of each species captured. Houston Advanced Research Center (HARC) calculated the relative abundance data, calculated as the catch of a particular species in a sample divided by the total number of animals captured in that sample. Absence data was recorded for species on the TPWD species sampling lists that were not captured during sampling.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Occurrence</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Observation</keyword>
+        <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Occurrence</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+      </keywordSet>
+  <additionalInfo>
+    <para>marine, harvest by iOBIS</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">https://www.sciencebase.gov/catalog/item/53a887f4e4b075096c60cfdd</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Aransas Bay System. All waters, including all saltwater bayous in the bay system, behind the surfline from the eastern edge of Mesquite Bay to the causeway between Aransas Pass and Port Aransas, including the ICWW.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-97.303</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.828</eastBoundingCoordinate>
+          <northBoundingCoordinate>28.573</northBoundingCoordinate>
+          <southBoundingCoordinate>27.82</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+  </coverage>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Lisa</givenName>
+      <surName>Gonzalez</surName>
+    </individualName>
+    <organizationName>Houston Advanced Research Center</organizationName>
+    <positionName>Vice President and Chief Operating Officer</positionName>
+    <electronicMailAddress>lgonzalez@harcresearch.org</electronicMailAddress>
+      </contact>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2015-01-30T16:24:08.490+00:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <physical>
+              <objectName>CSDGM Metadata XML</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>XML</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://www.sciencebase.gov/catalog/file/get/53a887f4e4b075096c60cfdd?f=__disk__c5%2F05%2F42%2Fc50542dd9a2bf0fd777d17602384757ab5e6a6e5</url>
+                </online>
+              </distribution>
+            </physical>
+          <dc:replaces>2473e9c3-624f-4cd6-bfc6-b476913790b5/v2.3.xml</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
