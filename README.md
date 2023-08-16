@@ -124,7 +124,7 @@ library(Hmisc)
 
 7.  Check that dates are following [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601)
 
-8.  Check that the scientifically is/are valid
+8.  Check that the scientific names is/are valid
 
     1.  OBIS uses the [World Register of Marine Species (WoRMS)](https://www.marinespecies.org/) as the taxonomic backbone. We need to match our species abbreviations to WoRMS naming
 
