@@ -8,7 +8,7 @@ speciesMap <- tribble(
     ~ours, ~aphia, ~coordinateUncertaintyInMeters,
     'BB', 242608, 4000,
     'BW', 136986, 4000,
-    'BW37V', 136986, 4000,
+    'BW37V', 136986, 4000, # change to Hubb's species (aphiaID 254990)
     'BW43', 136986, 4000,
     'BWC', 136986, 4000,
     'MS', 254991, 4000,
@@ -19,7 +19,7 @@ speciesMap <- tribble(
 otherFields <- list(
     basisOfRecord = 'MachineObservation',
     institutionCode = 'SWFSC',
-    georeferenceProtocol = 'SPOT GPS',
+    georeferenceProtocol = 'SPOT GPS', # needs to be changed for future projects
     samplingProtocol = 'https://doi.org/10.6084/m9.figshare.19358036',
     countryCode = 'US',
     geodeticDatum = 'WGS84')

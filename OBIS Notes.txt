@@ -1,0 +1,15 @@
+start (start of hour)
+end (end of hour)
+species (try to match our common species abbreviations)
+call type (leave as NA if don't have distinct 
+effort (0-60, fill in later)
+drift #
+
+additional data
+
+take lat and lon from gps (match times)
+
+round every presence to lower hour
+if i have multiple detections of same species in one hour, take only 1 
+
+hourly presence for all species (including odontecetes)
